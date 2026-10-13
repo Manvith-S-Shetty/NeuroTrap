@@ -1,0 +1,99 @@
+{
+  "model_name": "Logistic Regression",
+  "model_params": {
+    "C": 0.1,
+    "class_weight": null,
+    "solver": "liblinear",
+    "random_state": 42
+  },
+  "decision_threshold": 0.5,
+  "feature_count": 19,
+  "dev_recordings": 269,
+  "dev_participants": 26,
+  "test_recordings": 69,
+  "test_participants": 7,
+  "participant_overlap": 0,
+  "test_participant_ids": [
+    "S09",
+    "S10",
+    "S16",
+    "S18",
+    "S22",
+    "S27",
+    "S32"
+  ],
+  "accuracy": 0.855072463768116,
+  "precision": 0.9655172413793104,
+  "recall_pd_sensitivity": 0.7567567567567568,
+  "specificity_cnt": 0.96875,
+  "f1_score": 0.8484848484848485,
+  "roc_auc": 0.9543918918918919,
+  "confusion_matrix": [
+    [
+      31,
+      1
+    ],
+    [
+      9,
+      28
+    ]
+  ],
+  "participant_summaries": [
+    {
+      "participant_id": "S09",
+      "actual_label": "PD",
+      "recording_count": 11,
+      "CNT_predictions": 9,
+      "PD_predictions": 2,
+      "majority_prediction": "CNT"
+    },
+    {
+      "participant_id": "S10",
+      "actual_label": "PD",
+      "recording_count": 11,
+      "CNT_predictions": 0,
+      "PD_predictions": 11,
+      "majority_prediction": "PD"
+    },
+    {
+      "participant_id": "S16",
+      "actual_label": "PD",
+      "recording_count": 5,
+      "CNT_predictions": 0,
+      "PD_predictions": 5,
+      "majority_prediction": "PD"
+    },
+    {
+      "participant_id": "S18",
+      "actual_label": "PD",
+      "recording_count": 10,
+      "CNT_predictions": 0,
+      "PD_predictions": 10,
+      "majority_prediction": "PD"
+    },
+    {
+      "participant_id": "S22",
+      "actual_label": "CNT",
+      "recording_count": 11,
+      "CNT_predictions": 11,
+      "PD_predictions": 0,
+      "majority_prediction": "CNT"
+    },
+    {
+      "participant_id": "S27",
+      "actual_label": "CNT",
+      "recording_count": 11,
+      "CNT_predictions": 11,
+      "PD_predictions": 0,
+      "majority_prediction": "CNT"
+    },
+    {
+      "participant_id": "S32",
+      "actual_label": "CNT",
+      "recording_count": 10,
+      "CNT_predictions": 9,
+      "PD_predictions": 1,
+      "majority_prediction": "CNT"
+    }
+  ]
+}

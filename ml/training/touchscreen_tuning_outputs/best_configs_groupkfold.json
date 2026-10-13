@@ -1,0 +1,22 @@
+{
+  "cv_strategy": "GroupKFold",
+  "selection_metric": "mean_f1",
+  "best_logistic_regression": {
+    "params": {
+      "C": 0.1,
+      "class_weight": "balanced"
+    },
+    "mean_f1": 0.8204728931830381,
+    "std_f1": 0.1348971293735522
+  },
+  "best_random_forest": {
+    "params": {
+      "n_estimators": 500,
+      "max_depth": 10,
+      "min_samples_leaf": 2,
+      "class_weight": null
+    },
+    "mean_f1": 0.7778644039239108,
+    "std_f1": 0.08967755270867184
+  }
+}

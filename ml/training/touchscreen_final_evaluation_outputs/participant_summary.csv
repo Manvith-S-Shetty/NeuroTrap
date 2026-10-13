@@ -1,0 +1,8 @@
+participant_id,actual_label,recording_count,CNT_predictions,PD_predictions,majority_prediction
+S09,PD,11,10,1,CNT
+S10,PD,11,0,11,PD
+S16,PD,5,0,5,PD
+S18,PD,10,0,10,PD
+S22,CNT,11,11,0,CNT
+S27,CNT,11,10,1,CNT
+S32,CNT,10,1,9,PD

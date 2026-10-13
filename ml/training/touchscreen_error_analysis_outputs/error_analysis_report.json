@@ -1,0 +1,197 @@
+{
+  "integrity_notice": "Analysis only. No retraining, re-tuning, or prediction modification performed.",
+  "total_recordings": 69,
+  "correct_recordings": 49,
+  "incorrect_recordings": 20,
+  "false_positives": 10,
+  "false_negatives": 10,
+  "incorrect_participants": [
+    "S09",
+    "S32"
+  ],
+  "confidence_summary": {
+    "correct": {
+      "mean_confidence": 0.6671130612724605,
+      "median_confidence": 0.6279892195446776,
+      "min_confidence": 0.5073830385399236,
+      "max_confidence": 0.9999607648177664,
+      "bin_counts": {
+        "0.50-0.60": 18,
+        "0.60-0.70": 16,
+        "0.70-0.80": 6,
+        "0.80-0.90": 5,
+        "0.90-1.00": 4
+      }
+    },
+    "incorrect": {
+      "mean_confidence": 0.5629507582695779,
+      "median_confidence": 0.5692634232264091,
+      "min_confidence": 0.5049419093099207,
+      "max_confidence": 0.6139215221891745,
+      "bin_counts": {
+        "0.50-0.60": 17,
+        "0.60-0.70": 3,
+        "0.70-0.80": 0,
+        "0.80-0.90": 0,
+        "0.90-1.00": 0
+      }
+    },
+    "overall": {
+      "mean_confidence": 0.636921089387567,
+      "median_confidence": 0.5955754873618947,
+      "min_confidence": 0.5049419093099207,
+      "max_confidence": 0.9999607648177664,
+      "bin_counts": {
+        "0.50-0.60": 35,
+        "0.60-0.70": 19,
+        "0.70-0.80": 6,
+        "0.80-0.90": 5,
+        "0.90-1.00": 4
+      }
+    }
+  },
+  "top_feature_differences": [
+    {
+      "feature": "recording_duration",
+      "mean_correct": 100.28487755102039,
+      "mean_incorrect": 66.51615,
+      "absolute_difference": 33.76872755102039,
+      "relative_difference_percent": 33.67280129596122
+    },
+    {
+      "feature": "event_count",
+      "mean_correct": 68.89795918367346,
+      "mean_incorrect": 78.95,
+      "absolute_difference": 10.052040816326539,
+      "relative_difference_percent": 14.589751182716547
+    },
+    {
+      "feature": "inter_tap_kurtosis",
+      "mean_correct": 13.86472099905774,
+      "mean_incorrect": 22.86732000791527,
+      "absolute_difference": 9.002599008857532,
+      "relative_difference_percent": 64.93169969288374
+    },
+    {
+      "feature": "hold_kurtosis",
+      "mean_correct": 7.35543462351439,
+      "mean_incorrect": 1.1073134680239967,
+      "absolute_difference": 6.248121155490393,
+      "relative_difference_percent": 84.94564178466598
+    },
+    {
+      "feature": "inter_tap_max",
+      "mean_correct": 6.935836734693877,
+      "mean_incorrect": 8.7528,
+      "absolute_difference": 1.8169632653061232,
+      "relative_difference_percent": 26.196742111846195
+    },
+    {
+      "feature": "inter_tap_skewness",
+      "mean_correct": 2.96838390522644,
+      "mean_incorrect": 4.051277781956574,
+      "absolute_difference": 1.0828938767301342,
+      "relative_difference_percent": 36.48092388506043
+    },
+    {
+      "feature": "hold_skewness",
+      "mean_correct": 1.3908172664789327,
+      "mean_incorrect": 0.3679501974423672,
+      "absolute_difference": 1.0228670690365655,
+      "relative_difference_percent": 73.54431716768075
+    },
+    {
+      "feature": "inter_tap_variance",
+      "mean_correct": 2.1663838609279784,
+      "mean_incorrect": 2.920885955550228,
+      "absolute_difference": 0.7545020946222496,
+      "relative_difference_percent": 34.827719350544086
+    },
+    {
+      "feature": "inter_tap_mean",
+      "mean_correct": 1.4712481491574325,
+      "mean_incorrect": 0.8395005735065248,
+      "absolute_difference": 0.6317475756509077,
+      "relative_difference_percent": 42.939566090108315
+    },
+    {
+      "feature": "inter_tap_median",
+      "mean_correct": 1.1420612244897959,
+      "mean_incorrect": 0.5821500000000001,
+      "absolute_difference": 0.5599112244897958,
+      "relative_difference_percent": 49.0263750822372
+    }
+  ],
+  "top_coefficients": [
+    {
+      "feature": "pressure_median",
+      "coefficient": -0.06039473507518553,
+      "abs_coefficient": 0.06039473507518553,
+      "direction": "Negative (pushes model toward CNT)",
+      "interpretation": "A higher standardized value of pressure_median decreases the log-odds of PD classification."
+    },
+    {
+      "feature": "pressure_mean",
+      "coefficient": -0.06019564348775795,
+      "abs_coefficient": 0.06019564348775795,
+      "direction": "Negative (pushes model toward CNT)",
+      "interpretation": "A higher standardized value of pressure_mean decreases the log-odds of PD classification."
+    },
+    {
+      "feature": "hold_mean",
+      "coefficient": 0.05519451359006872,
+      "abs_coefficient": 0.05519451359006872,
+      "direction": "Positive (pushes model toward PD)",
+      "interpretation": "A higher standardized value of hold_mean increases the log-odds of PD classification."
+    },
+    {
+      "feature": "hold_median",
+      "coefficient": 0.0548935549694386,
+      "abs_coefficient": 0.0548935549694386,
+      "direction": "Positive (pushes model toward PD)",
+      "interpretation": "A higher standardized value of hold_median increases the log-odds of PD classification."
+    },
+    {
+      "feature": "pressure_max",
+      "coefficient": -0.049297179740176694,
+      "abs_coefficient": 0.049297179740176694,
+      "direction": "Negative (pushes model toward CNT)",
+      "interpretation": "A higher standardized value of pressure_max decreases the log-odds of PD classification."
+    },
+    {
+      "feature": "typing_rate",
+      "coefficient": -0.04762553040719583,
+      "abs_coefficient": 0.04762553040719583,
+      "direction": "Negative (pushes model toward CNT)",
+      "interpretation": "A higher standardized value of typing_rate decreases the log-odds of PD classification."
+    },
+    {
+      "feature": "inter_tap_median",
+      "coefficient": 0.04705538983857821,
+      "abs_coefficient": 0.04705538983857821,
+      "direction": "Positive (pushes model toward PD)",
+      "interpretation": "A higher standardized value of inter_tap_median increases the log-odds of PD classification."
+    },
+    {
+      "feature": "hold_std",
+      "coefficient": 0.04690471707311058,
+      "abs_coefficient": 0.04690471707311058,
+      "direction": "Positive (pushes model toward PD)",
+      "interpretation": "A higher standardized value of hold_std increases the log-odds of PD classification."
+    },
+    {
+      "feature": "hold_max",
+      "coefficient": 0.04307537921774818,
+      "abs_coefficient": 0.04307537921774818,
+      "direction": "Positive (pushes model toward PD)",
+      "interpretation": "A higher standardized value of hold_max increases the log-odds of PD classification."
+    },
+    {
+      "feature": "inter_tap_mean",
+      "coefficient": 0.039287621102686555,
+      "abs_coefficient": 0.039287621102686555,
+      "direction": "Positive (pushes model toward PD)",
+      "interpretation": "A higher standardized value of inter_tap_mean increases the log-odds of PD classification."
+    }
+  ]
+}
